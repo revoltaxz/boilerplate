@@ -1,8 +1,8 @@
 import * as S from './styles'
 
-const Main = () => (
+const Main = ({ title = 'Boilerplate' }) => (
   <S.Wrapper>
-    <h1>Boilerplate</h1>
+    <h1>{title}</h1>
   </S.Wrapper>
 )
 
