@@ -2,15 +2,40 @@
 
 exports[`<Main /> should render the heading 1`] = `
 .c0 {
-  background-color: #518ca3;
+  background-color: #06092b;
   color: #fff;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 100%;
+}
+
+.c1 {
+  max-width: min(25rem,100%);
+  margin-bottom: 2rem;
 }
 
 <main
   class="c0"
 >
+  <img
+    alt="Logo de um atomo do React"
+    class="c1"
+    src="/img/icon-512.png"
+  />
   <h1>
     Boilerplate
   </h1>

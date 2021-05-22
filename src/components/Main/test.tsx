@@ -11,4 +11,11 @@ describe('<Main />', () => {
 
     expect(container.firstChild).toMatchSnapshot()
   })
+
+  it('should render the image', () => {
+    render(<Main />)
+    expect(
+      screen.getByAltText(/logo de um atomo do react/i)
+    ).toBeInTheDocument()
+  })
 })
